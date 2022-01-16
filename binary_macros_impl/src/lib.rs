@@ -33,7 +33,7 @@ fn helper(input: TokenStream, decoder: data_encoding::Encoding) -> TokenStream {
 
 #[proc_macro_hack]
 pub fn base16(input: TokenStream) -> TokenStream {
-    helper(input, data_encoding::HEXLOWER)
+    helper(input, data_encoding::HEXLOWER_PERMISSIVE)
 }
 
 #[proc_macro_hack]
